@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-tahoma">
+    <div class="flex items-center justify-center w-full h-screen">
+
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="flex flex-col w-4/5 max-w-lg bg-slate-200 p-6 rounded-xl"
+      >
+      <div class="text-center">
+        <h3 class="text-xl">GET IN TOUCH WITH US</h3>
+        <p class="my-4">Fill up the form to to message us</p>
+
+      </div>
+        <input
+          class="border text-sm"
+          type="hidden"
+          name="access_key"
+          value="56cc6ba1-c348-49f1-8760-60704d589373"
+        />
+
+        <label for="">Name</label>
+        <input class="border-black border-1 p-2 rounded-md mt-1.5 mb-4 focus:outline-none focus:ring focus:border-blue-500" type="text" name="name" required />
+
+        <label for="">Surname</label>
+        <input class=" border-black border-1 p-2 rounded-md mt-1.5 mb-4 focus:outline-none focus:ring focus:border-blue-500" type="text" name="name" required />
+
+        <label for="">Email</label>
+        <input class="border-black border-1  p-2 rounded-md mt-1.5 mb-4 focus:outline-none focus:ring focus:border-blue-500" type="email" name="name" required />
+
+       <label for="">Message</label>
+        <textarea class="outline-none p-2" name="message" style="height: 200px;" required></textarea>
+
+        <div class="h-captcha" data-captcha="true"></div>
+
+        <button class="text-white bg-green-500 hover:bg-green-600 w-full mt-2 py-3 outline-none rounded-full" type="submit">Submit Form</button>
+      </form>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
